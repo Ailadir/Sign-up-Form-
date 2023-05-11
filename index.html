@@ -9,47 +9,48 @@
   </head>
 
   <body>
-    <img src="./assets/img/background.jpg" alt="picture of Mermaid lagoon" srcset="" id="big_pic" />
+    
+    <img src="./assets/img/background2.svg" alt="picture of Mermaid lagoon" srcset="" id="big_pic" />
 
-    <main>
+    <div id="content_container">
       <header id="form_title">Get Started!</header>
 
       <form input action="" id="form_container">
 
         <div input class="input_container">
-          <input type="text" name="first_name" id="first_name" placeholder="" >
+          <input type="text" name="first_name" id="first_name" placeholder="" required>
           <span>First name</span></input>
         </div>
 
         <div class="input_container">
-          <input type="text" name="last_name" id="last_name" placeholder="" />
+          <input type="text" name="last_name" id="last_name" placeholder="" required/>
           <span>Last name</span>
         </div>
 
         <div class="input_container">
-          <input type="email" name="email" id="email" placeholder="" />
+          <input type="email" name="email" id="email" placeholder="" required/>
           <span>Email</span>
         </div>
 
         <div class="input_container">
-          <input type="tel" name="phone" id="phone" />
+          <input  pattern="[1-9]+" name="phone" id="phone" required minlength="6"/>
           <span>Phone number</span>
         </div>
 
         <div class="input_container">
-          <input type="password" name="password" id="password" placeholder="" />
+          <input type="password" name="password" id="password" placeholder="" required minlength="8"/>
           <span>Password</span>
         </div>
 
         <div class="input_container">
-          <input type="password" name="conf_password" id="conf_password" placeholder="" />
+          <input type="password" name="conf_password" id="conf_password" placeholder="" required minlength="8"/>
           <span>Confirm password</span>
         </div>
 
       </form>
-      <button type="submit" form="info_form">Create</button>
+      <button type="submit" form="info_form">Create account</button>
 
-    </main>
+    </div>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

@@ -1,144 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
 
 html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+}
+
+img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+h6 {
+  overflow-wrap: break-word;
 }
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 //
 // Css reset
 //
 
-$color-primary: #145da0;
-$color-secondary: #0c2d48;
-$color-complementary: #2e8bc0;
-$color: #b1d4e0;
+$color-primary: #e0e0e0;
+$color-secondary: #407bff;
+$color-complementary: #fa4e5d;
+$color: #eceae9;
 
 :root {
   font-size: 10px;
 }
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Popins', sans-serif;
 }
 
 body {
@@ -146,48 +78,142 @@ body {
   min-height: 100vh;
   flex-direction: row;
   font-size: 2rem;
+  // background-color: $color-primary;
+
+  //   background: gradient(90deg, white, $color-secondary);
 }
+
+/* 
+    Left side 
+*/
 
 #big_pic {
   min-height: 70vh;
-  max-width: 40%;
+  min-width: 40%;
   align-self: center;
 }
 
-main {
+/*
+    Right side
+*/
+
+#content_container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
+  height: auto;
+  background-color: $color-secondary;
+  color: $color;
+  // clip-path: polygon(0 0, 85% 0, 100% 75vh, 35% 100%, 0 100%);
 }
+
 #form_title {
-  font-weight: 900;
   font-size: 5rem;
   align-self: flex-start;
+  margin: 5rem;
 }
 
 #form_container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  width: 90%;
+  margin: 1rem;
 }
+
+/*
+    Input styling
+*/
 
 .input_container {
   position: relative;
-}
-
-input {
-  width: 30rem;
+  margin: 3rem;
 }
 
 span {
-  font-weight: 400;
   font-size: 2rem;
   position: absolute;
   top: 0;
   left: 0;
   transition: all 0.5s;
+  pointer-events: none;
 }
+
+input {
+  width: 30rem;
+  background-color: $color-secondary;
+  transition: all 0.5s;
+  border: 2px solid $color-secondary;
+  border-radius: 1rem;
+  padding: 0.6rem;
+}
+
+/*
+  Button styling
+*/
 button {
-  width: 15rem;
+  background-color: $color-primary;
+  border: 1px solid black;
+  border-radius: 15px;
+  max-width: 25rem;
+  margin: 3.5rem;
+  padding: 1rem 2rem;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.338);
+  transition: all 0.2s;
+}
+
+/*
+    Input effect
+*/
+
+input:focus,
+input:valid {
+  outline: none;
+  border: 2px solid green;
+  margin: 0px;
+}
+
+input:focus:invalid {
+  outline: none;
+  border: 2px solid red;
+  margin: 0px;
+}
+/*
+    "Placeholder" effect
+*/
+
+input:active ~ span,
+input:valid ~ span,
+input:focus ~ span {
+  background-color: green;
+  border-radius: 1rem;
+  transform: translateX(5px) translateY(-15px);
+}
+input:invalid ~ span {
+  transform: translateX(5px) translateY(-15px);
+}
+
+/*
+    Button effects
+*/
+button:hover {
+  transform: translateY(-5px);
+}
+
+button:active {
+  transform: translateY(-2px);
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
+
+  #form_title {
+    font-size: 4rem;
+  }
+  input {
+    width: 25rem;
+  }
 }

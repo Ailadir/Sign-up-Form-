@@ -57,7 +57,8 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: row;
-  font-size: 2rem; }
+  font-size: 2rem;
+  z-index: 1; }
 
 /* 
     Left side 
@@ -77,7 +78,8 @@ body {
   width: 100%;
   height: auto;
   background-color: #407bff;
-  color: #eceae9; }
+  color: #eceae9;
+  animation: moveUp 1s ease-out; }
 
 #form_title {
   font-size: 5rem;
@@ -103,8 +105,9 @@ span {
   position: absolute;
   top: 0;
   left: 0;
-  transition: all 0.5s;
-  pointer-events: none; }
+  transition: all 1s;
+  pointer-events: none;
+  animation: moveInTop 1s ease-out 1s backwards; }
 
 input {
   width: 30rem;
@@ -125,33 +128,40 @@ button {
   margin: 3.5rem;
   padding: 1rem 2rem;
   box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.338);
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  animation: moveInRight 1s ease-out 2s backwards; }
 
 /*
     Input effect
 */
-input:focus,
+.input_correct, input:focus,
 input:valid {
   outline: none;
   border: 2px solid green;
   margin: 0px; }
 
-input:focus:invalid {
-  outline: none;
-  border: 2px solid red;
-  margin: 0px; }
-
-/*
-    "Placeholder" effect
-*/
-input:active ~ span,
-input:valid ~ span,
-input:focus ~ span {
+.span_corret {
   background-color: green;
   border-radius: 1rem;
   transform: translateX(5px) translateY(-15px); }
 
-input:invalid ~ span {
+.input_incorrect {
+  outline: none;
+  border: 2px solid #fa4e5ca1;
+  margin: 0px; }
+
+.span_incorrect {
+  background-color: #fa4e5ca1;
+  border-radius: 1rem;
+  transform: translateX(5px) translateY(-15px); }
+
+/*
+    "Placeholder" effect
+*/
+input:valid ~ span,
+input:focus ~ span {
+  background-color: green;
+  border-radius: 1rem;
   transform: translateX(5px) translateY(-15px); }
 
 /*
@@ -163,6 +173,9 @@ button:hover {
 button:active {
   transform: translateY(-2px); }
 
+.animated {
+  animation: moveInRight 1s ease-in; }
+
 @media only screen and (max-width: 600px) {
   body {
     flex-direction: column; }
@@ -170,3 +183,29 @@ button:active {
     font-size: 4rem; }
   input {
     width: 25rem; } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  80% {
+    transform: translateX(10px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(100px); }
+  80% {
+    transform: translateY(10px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveUp {
+  0% {
+    transform: translateX(50px) translateY(50px); }
+  100% {
+    transform: translateX(0) translateY(0); } }

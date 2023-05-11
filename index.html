@@ -12,10 +12,10 @@
     
     <img src="./assets/img/background2.svg" alt="picture of Mermaid lagoon" srcset="" id="big_pic" />
 
-    <div id="content_container">
+    <div id="content_container" class="animated">
       <header id="form_title">Get Started!</header>
 
-      <form input action="" id="form_container">
+      <form method="post" action="#" id="form_container">
 
         <div input class="input_container">
           <input type="text" name="first_name" id="first_name" placeholder="" required>
@@ -28,7 +28,7 @@
         </div>
 
         <div class="input_container">
-          <input type="email" name="email" id="email" placeholder="" required/>
+          <input type="email" name="email" id="email" placeholder=""title="Please enter a valid zip code, example: 65251" required/>
           <span>Email</span>
         </div>
 
@@ -46,9 +46,10 @@
           <input type="password" name="conf_password" id="conf_password" placeholder="" required minlength="8"/>
           <span>Confirm password</span>
         </div>
+        <button type="submit" form="info_form" id="create_account">Create account</button>
 
       </form>
-      <button type="submit" form="info_form">Create account</button>
+      <!-- <button type="submit" form="info_form" id="create_account">Create account</button> -->
 
     </div>
     <script src="./assets/js/script.js"></script>

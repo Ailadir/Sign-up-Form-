@@ -1,0 +1,10 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include background('../img/main_background.svg');
+}

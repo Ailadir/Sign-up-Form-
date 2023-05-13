@@ -1,0 +1,130 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+}
+
+img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/main_background.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+.signup {
+  display: flex;
+  flex-direction: row;
+  border: 1rem solid rgba(128, 128, 128, 0.5);
+  border-radius: 1rem;
+  max-width: 114rem;
+  max-height: 90vh;
+}
+.signup__picture {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 70rem;
+  height: auto;
+  flex: 1.5;
+}
+.signup__container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.signup__container-title {
+  font-size: 4.5rem;
+  margin: 10rem 0 2rem 0;
+}
+.signup__form {
+  display: flex;
+  flex-direction: column;
+}
+.signup__form-input {
+  background-color: transparent;
+  font-size: 2.5rem;
+  max-width: 40rem;
+  border: 0;
+  border-bottom: 1px solid black;
+}
+.signup__form-input:nth-child(-n+3) {
+  margin-bottom: 4rem;
+}
+.signup__conditions {
+  font-size: 1.3rem;
+}/*# sourceMappingURL=main.css.map */

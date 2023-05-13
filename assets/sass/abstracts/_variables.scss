@@ -1,0 +1,10 @@
+// Colors
+$signup-background-color: rgba(64, 124, 255, 0.6);
+
+// Sizes
+$signup-width: 114rem;
+$signup-height: 90vh;
+$picture-width: clamp(30rem, 60rem, 90rem);
+$picture-height: $picture-width * 2;
+
+$input-border-bottom: 4rem;

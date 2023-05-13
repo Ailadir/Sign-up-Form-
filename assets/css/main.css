@@ -88,7 +88,7 @@ body {
   justify-content: center;
   align-items: center;
   background-image: url("../img/main_background.svg");
-  background-position: 0 0;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -149,13 +149,22 @@ html {
     font-size: 43.75%;
   }
   html .signup {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 0;
-    height: -moz-fit-content;
-    height: fit-content;
-    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  html .signup__form {
+    text-align: center;
+    align-items: center;
+  }
+  html__picture {
+    width: 80rem;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media only screen and (max-width: 56.25em) {
@@ -163,13 +172,22 @@ html {
     font-size: 50%;
   }
   html .signup {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 0;
-    height: -moz-fit-content;
-    height: fit-content;
-    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  html .signup__form {
+    text-align: center;
+    align-items: center;
+  }
+  html__picture {
+    width: 80rem;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media only screen and (max-width: 75em) {
@@ -177,13 +195,22 @@ html {
     font-size: 56.25%;
   }
   html .signup {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 0;
-    height: -moz-fit-content;
-    height: fit-content;
-    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  html .signup__form {
+    text-align: center;
+    align-items: center;
+  }
+  html__picture {
+    width: 80rem;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media only screen and (min-width: 112.5em) {
@@ -217,7 +244,6 @@ fieldset {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-left: 1.5rem;
   flex: 1;
 }
 .signup__form {

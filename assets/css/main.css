@@ -144,20 +144,57 @@ html {
 html {
   font-size: 62.5%;
 }
-@media only screen and (max-width: 75em) {
+@media only screen and (max-width: 37.5em) {
   html {
-    font-size: 56.25%;
+    font-size: 43.75%;
+  }
+  html .signup {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 56.25em) {
   html {
     font-size: 50%;
   }
+  html .signup {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+  html .signup {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+  }
 }
 @media only screen and (min-width: 112.5em) {
   html {
     font-size: 75%;
   }
+}
+
+fieldset {
+  border: 0;
+  font-size: 4rem;
 }
 
 .signup {
@@ -174,15 +211,14 @@ html {
   width: 70rem;
   height: auto;
   flex: 1.5;
+  max-width: 100%;
 }
 .signup__container {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  margin-left: 1.5rem;
   flex: 1;
-}
-.signup__container-title {
-  font-size: 4.5rem;
-  margin: 8rem 0 2rem 0;
 }
 .signup__form {
   display: flex;
@@ -193,14 +229,17 @@ html {
   font-size: 2.5rem;
   max-width: 40rem;
   border: 0;
+  outline: none;
   border-bottom: 0.4rem solid black;
 }
 .signup__form-input:focus {
-  outline: none;
   border-bottom: 0.4rem solid green;
 }
-.signup__form-input:nth-child(-n+3) {
-  margin-bottom: 4rem;
+.signup__form-input-active:invalid {
+  border-bottom: 0.4rem solid red;
+}
+.signup__form-input:nth-child(n) {
+  margin-bottom: 1rem;
 }
 .signup__conditions {
   font-size: 1.5rem;
@@ -224,30 +263,4 @@ html {
 }
 .signup__btn {
   font-size: 2rem;
-}
-
-@media screen and (max-width: 800px) {
-  html {
-    font-size: 50%;
-  }
-  body {
-    min-width: none;
-  }
-  .signup {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 0;
-    max-height: 100vh;
-    width: 100%;
-    overflow: hidden;
-  }
-  .signup__picture {
-    width: 80rem;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .signup__container-title {
-    margin: 0;
-  }
 }/*# sourceMappingURL=main.css.map */

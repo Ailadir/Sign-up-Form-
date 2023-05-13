@@ -21,21 +21,35 @@
   @if $breakpoint == phone {
     @media only screen and (max-width: 37.5em) {
       @content;
+      @include signup_respons();
     } //600px
   }
   @if $breakpoint == tab-port {
     @media only screen and (max-width: 56.25em) {
       @content;
+      @include signup_respons();
     } //900px
   }
   @if $breakpoint == tab-land {
     @media only screen and (max-width: 75em) {
       @content;
+      @include signup_respons();
     } //1200px
   }
   @if $breakpoint == big-desktop {
     @media only screen and (min-width: 112.5em) {
       @content;
     } //1800
+  }
+}
+
+@mixin signup_respons {
+  .signup {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    height: fit-content;
+    width: 100%;
   }
 }

@@ -12,12 +12,24 @@
     <div class="signup">
       <div class="signup__picture"><img src="assets/img/background.svg" alt="" /></div>
       <div class="signup__container">
-        <div class="signup__container-title">Sign up</div>
         <form class="signup__form" action="#">
-          <input type="text" class="signup__form-input" placeholder="Full Name" />
-          <input type="text" class="signup__form-input" placeholder="Email" />
-          <input type="text" class="signup__form-input" placeholder="Password" />
-          <input type="text" class="signup__form-input" placeholder="Confirm Password" />
+          <fieldset>
+            <legend>Sign up</legend>
+            <input type="text" class="signup__form-input" placeholder="Full Name" required />
+            <input type="email" minlength="10" class="signup__form-input" placeholder="Email" required />
+            <input
+              type="password"
+              minlength="8"
+              class="signup__form-input first_password"
+              placeholder="Password"
+              required />
+            <input
+              type="password"
+              minlength="8"
+              class="signup__form-input second_password"
+              placeholder="Confirm Password"
+              required />
+          </fieldset>
           <p class="signup__conditions">
             By signing up, you are agreeing to our
             <a href="" class="signup__conditions-link">Terms & Conditions</a>

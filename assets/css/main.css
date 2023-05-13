@@ -144,6 +144,21 @@ html {
 html {
   font-size: 62.5%;
 }
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
 
 .signup {
   display: flex;
@@ -178,20 +193,34 @@ html {
   font-size: 2.5rem;
   max-width: 40rem;
   border: 0;
-  border-bottom: 1px solid black;
+  border-bottom: 0.4rem solid black;
 }
 .signup__form-input:focus {
   outline: none;
-  border: 0;
+  border-bottom: 0.4rem solid green;
 }
 .signup__form-input:nth-child(-n+3) {
   margin-bottom: 4rem;
 }
 .signup__conditions {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+}
+.signup__conditions-link {
+  text-decoration: none;
+  color: #407bff;
+}
+.signup__conditions-link:hover {
+  color: rgb(4, 69, 211);
 }
 .signup__login {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+}
+.signup__login-link {
+  text-decoration: none;
+  color: #407bff;
+}
+.signup__login-link:hover {
+  color: rgb(4, 69, 211);
 }
 .signup__btn {
   font-size: 2rem;

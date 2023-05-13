@@ -144,29 +144,6 @@ html {
 html {
   font-size: 62.5%;
 }
-@media only screen and (max-width: 37.5em) {
-  html {
-    font-size: 43.75%;
-  }
-  html .signup {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 0;
-    min-width: 100%;
-    min-height: 100%;
-  }
-  html .signup__form {
-    text-align: center;
-    align-items: center;
-  }
-  html__picture {
-    width: 80rem;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
 @media only screen and (max-width: 56.25em) {
   html {
     font-size: 50%;
@@ -174,7 +151,6 @@ html {
   html .signup {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     border: 0;
     min-width: 100%;
@@ -197,7 +173,6 @@ html {
   html .signup {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     border: 0;
     min-width: 100%;

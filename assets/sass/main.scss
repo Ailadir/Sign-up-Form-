@@ -15,9 +15,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 */
 
-@import 'base/cssreset';
 @import 'abstracts/mixins';
 @import 'abstracts/variables';
+@import 'base/cssreset';
 
 @import 'base/animation';
 @import 'base/base';

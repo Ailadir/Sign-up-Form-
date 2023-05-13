@@ -4,54 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-    <title>Mermaid paradise</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
+    <title>Fancy Register</title>
   </head>
 
   <body>
-    
-    <img src="./assets/img/background2.svg" alt="picture of Mermaid lagoon" srcset="" id="big_pic" />
-
-    <div id="content_container" class="animated">
-      <header id="form_title">Get Started!</header>
-
-      <form method="post" action="#" id="form_container">
-
-        <div input class="input_container">
-          <input type="text" name="first_name" id="first_name" placeholder="" required>
-          <span>First name</span></input>
-        </div>
-
-        <div class="input_container">
-          <input type="text" name="last_name" id="last_name" placeholder="" required/>
-          <span>Last name</span>
-        </div>
-
-        <div class="input_container">
-          <input type="email" name="email" id="email" placeholder=""title="Please enter a valid zip code, example: 65251" required/>
-          <span>Email</span>
-        </div>
-
-        <div class="input_container">
-          <input  pattern="[1-9]+" name="phone" id="phone" required minlength="6"/>
-          <span>Phone number</span>
-        </div>
-
-        <div class="input_container">
-          <input type="password" name="password" id="password" placeholder="" required minlength="8"/>
-          <span>Password</span>
-        </div>
-
-        <div class="input_container">
-          <input type="password" name="conf_password" id="conf_password" placeholder="" required minlength="8"/>
-          <span>Confirm password</span>
-        </div>
-        <button type="submit" form="info_form" id="create_account">Create account</button>
-
-      </form>
-      <!-- <button type="submit" form="info_form" id="create_account">Create account</button> -->
-
+    <div class="signup">
+      <div class="signup__picture"><img src="assets/img/background.svg" alt="" /></div>
+      <div class="signup__container">
+        <div class="signup__container-title">Sign up</div>
+        <form class="signup__form" action="">
+          <input type="text" class="signup__form-input" placeholder="Full Name" />
+          <input type="text" class="signup__form-input" placeholder="Email" />
+          <input type="text" class="signup__form-input" placeholder="Password" />
+          <input type="text" class="signup__form-input" placeholder="Confirm Password" />
+          <p class="signup__conditions">
+            By signing up, you are agreeing to our
+            <a href="">Terms & Conditions</a>
+            and
+            <a href="">Private Policy</a>
+          </p>
+          <button type="submit" class="btn btn--white btn--animated" href="#">Create account</button>
+          <p class="signup__login">
+            Already have an account?
+            <a href="">Login</a>
+          </p>
+        </form>
+      </div>
     </div>
+
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

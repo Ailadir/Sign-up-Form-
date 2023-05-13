@@ -14,7 +14,7 @@ $breakpoint arguement choices:
 ORDER: Base + typography > general layout + grid > page layout > components
 
 */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
 *,
 *::before,
 *::after {
@@ -69,6 +69,16 @@ h6 {
   overflow-wrap: break-word;
 }
 
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 html {
   font-size: 62.5%;
 }
@@ -77,14 +87,61 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../img/main_background.svg");
+  background-image: url('../img/main_background.svg');
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 html {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 3rem;
+  width: 20rem;
+  margin: 1rem;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.6rem;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.8);
+  opacity: 0;
+}
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+.btn--white {
+  background-color: #fff;
+  color: #777;
+}
+.btn--white:after {
+  background-color: #fff;
+}
+.btn::after {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.2s;
+}
+.btn--animated {
+  animation: moveInBottom 0.6s ease-out 0.75s backwards;
 }
 
 .signup {
@@ -97,7 +154,7 @@ html {
 }
 .signup__picture {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 70rem;
   height: auto;
   flex: 1.5;
@@ -122,9 +179,15 @@ html {
   border: 0;
   border-bottom: 1px solid black;
 }
-.signup__form-input:nth-child(-n+3) {
+.signup__form-input:nth-child(-n + 3) {
   margin-bottom: 4rem;
 }
 .signup__conditions {
   font-size: 1.3rem;
-}/*# sourceMappingURL=main.css.map */
+}
+.signup__login {
+  font-size: 1.5rem;
+}
+.signup__btn {
+  font-size: 2rem;
+} /*# sourceMappingURL=main.css.map */

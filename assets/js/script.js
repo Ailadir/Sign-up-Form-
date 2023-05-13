@@ -9,7 +9,7 @@ window.addEventListener('load', (event) => {
 });
 
 btnCreate.addEventListener('click', (event) => {
-  if (firstPassword.value !== secondPassword.value) {
+  if ((firstPassword.value !== secondPassword.value) {
     // btnCreate.disabled = true;
     console.log('blocked');
   } else {

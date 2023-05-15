@@ -104,6 +104,7 @@ html {
   background-color: rgba(64, 123, 255, 0.5);
   width: 15rem;
   margin-top: 2rem;
+  margin-bottom: 1rem;
   padding: 1.5rem 4rem;
   border: 1px solid black;
   border-radius: 10rem;
@@ -131,6 +132,9 @@ html {
   html {
     font-size: 50%;
   }
+  html legend {
+    margin-left: 0;
+  }
   html .signup {
     display: flex;
     flex-direction: column;
@@ -152,6 +156,9 @@ html {
 @media only screen and (max-width: 75em) {
   html {
     font-size: 56.25%;
+  }
+  html legend {
+    margin-left: 0;
   }
   html .signup {
     display: flex;
@@ -180,6 +187,10 @@ html {
 fieldset {
   border: 0;
   font-size: 4rem;
+}
+
+legend {
+  margin-left: -0.1rem;
 }
 
 .signup {

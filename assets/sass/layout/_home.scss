@@ -24,6 +24,11 @@ fieldset {
   border: 0;
   font-size: 4rem;
 }
+
+legend {
+  margin-left: -0.1rem;
+}
+
 .signup {
   display: flex;
   flex-direction: row;

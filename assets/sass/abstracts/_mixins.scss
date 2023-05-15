@@ -44,6 +44,9 @@
 }
 
 @mixin signup_respons {
+  legend {
+    margin-left: 0;
+  }
   .signup {
     display: flex;
     flex-direction: column;

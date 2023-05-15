@@ -44,7 +44,6 @@ fieldset {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    // margin-left: 1.5rem;
     flex: 1;
   }
 
@@ -55,6 +54,7 @@ fieldset {
       background-color: transparent;
       font-size: 2.5rem;
       max-width: 40rem;
+      margin-left: 0.1rem;
       border: 0;
       outline: none;
       border-bottom: 0.4rem solid black;

@@ -132,50 +132,48 @@ html {
   html {
     font-size: 50%;
   }
-  html legend {
-    margin-left: 0;
-  }
   html .signup {
     display: flex;
     flex-direction: column;
-    align-items: center;
     border: 0;
-    min-width: 100%;
-    min-height: 100%;
+    max-height: 100%;
+    max-width: 100%;
   }
-  html .signup__form {
-    text-align: center;
-    align-items: center;
+  html .signup__container {
+    width: 100%;
+    height: 100%;
+    margin-left: 1rem;
   }
-  html__picture {
-    width: 80rem;
-    -o-object-fit: cover;
-       object-fit: cover;
+  html .signup fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
   }
 }
 @media only screen and (max-width: 75em) {
   html {
     font-size: 56.25%;
   }
-  html legend {
-    margin-left: 0;
-  }
   html .signup {
     display: flex;
     flex-direction: column;
-    align-items: center;
     border: 0;
-    min-width: 100%;
-    min-height: 100%;
+    max-height: 100%;
+    max-width: 100%;
   }
-  html .signup__form {
-    text-align: center;
-    align-items: center;
+  html .signup__container {
+    width: 100%;
+    height: 100%;
+    margin-left: 1rem;
   }
-  html__picture {
-    width: 80rem;
-    -o-object-fit: cover;
-       object-fit: cover;
+  html .signup fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
   }
 }
 @media only screen and (min-width: 112.5em) {

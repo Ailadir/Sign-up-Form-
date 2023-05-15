@@ -148,6 +148,9 @@ html {
   html .signup__form-input {
     margin-top: 1rem;
   }
+  html .signup__login {
+    margin-bottom: 3rem;
+  }
   html .signup fieldset {
     display: flex;
     flex-direction: column;
@@ -175,6 +178,9 @@ html {
   }
   html .signup__form-input {
     margin-top: 1rem;
+  }
+  html .signup__login {
+    margin-bottom: 3rem;
   }
   html .signup fieldset {
     display: flex;

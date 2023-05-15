@@ -6,8 +6,8 @@ input.forEach((item) =>
   })
 );
 
-// input.forEach((item) =>
-//   item.addEventListener('keyup', (event) => {
-//     item.classList.remove('-active');
-//   })
-// );
+input.forEach((item) =>
+  item.addEventListener('keyup', (event) => {
+    item.classList.remove('-active');
+  })
+);

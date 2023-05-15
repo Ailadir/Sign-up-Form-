@@ -4,6 +4,7 @@
 $signup-background-color: rgba(64, 124, 255, 0.6);
 $color-blue: #407bff;
 $color-blue-dark: rgb(4, 69, 211);
+$color-signup-border: rgba(128, 128, 128, 0.5);
 
 // Button colors
 $color-black: #000;
@@ -11,9 +12,20 @@ $color-grey-dark: #777;
 $color-white: #fff;
 
 // Sizes
+$picture-width: 70rem;
+
 $signup-width: 114rem;
 $signup-height: 90vh;
 $picture-width: clamp(30rem, 60rem, 90rem);
 $picture-height: $picture-width * 2;
 
+$fieldset-font-size: 4rem;
 $input-border-bottom: 1rem;
+$input-font-size: 2.5rem;
+$input-width: 40rem;
+
+$conditions-font-size: 1.5rem;
+
+$login-font-size: 1.7rem;
+
+$btn-font-size: 2rem;

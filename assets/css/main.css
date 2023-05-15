@@ -80,6 +80,41 @@ h6 {
   }
 }
 html {
+  font-family: "Poppins", sans-serif;
+}
+
+.signup__form-input {
+  font-size: 2.5rem;
+}
+.signup__conditions {
+  font-size: 1.5rem;
+}
+.signup__conditions-link {
+  text-decoration: none;
+  color: #407bff;
+}
+.signup__conditions-link:hover {
+  color: rgb(4, 69, 211);
+}
+.signup__login {
+  font-size: 1.7rem;
+}
+.signup__login-link {
+  text-decoration: none;
+  color: #407bff;
+}
+.signup__login-link:hover {
+  color: rgb(4, 69, 211);
+}
+.signup__btn {
+  font-size: 2rem;
+}
+
+fieldset {
+  font-size: 4rem;
+}
+
+html {
   font-size: 62.5%;
 }
 
@@ -91,10 +126,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-html {
-  font-family: "Poppins", sans-serif;
 }
 
 .btn {
@@ -216,7 +247,7 @@ legend {
 .signup__picture {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 70rem;
+  width: 60rem;
   height: auto;
   flex: 1.5;
   max-width: 100%;
@@ -233,14 +264,13 @@ legend {
 }
 .signup__form-input {
   background-color: transparent;
-  font-size: 2.5rem;
   max-width: 40rem;
   margin-left: 0.1rem;
   border: 0;
   outline: none;
   border-bottom: 0.4rem solid black;
 }
-.signup__form-input:focus {
+.signup__form-input-active:valid {
   border-bottom: 0.4rem solid green;
 }
 .signup__form-input-active:invalid {
@@ -248,27 +278,4 @@ legend {
 }
 .signup__form-input:nth-child(n) {
   margin-bottom: 1rem;
-}
-.signup__conditions {
-  font-size: 1.5rem;
-}
-.signup__conditions-link {
-  text-decoration: none;
-  color: #407bff;
-}
-.signup__conditions-link:hover {
-  color: rgb(4, 69, 211);
-}
-.signup__login {
-  font-size: 1.7rem;
-}
-.signup__login-link {
-  text-decoration: none;
-  color: #407bff;
-}
-.signup__login-link:hover {
-  color: rgb(4, 69, 211);
-}
-.signup__btn {
-  font-size: 2rem;
 }/*# sourceMappingURL=main.css.map */

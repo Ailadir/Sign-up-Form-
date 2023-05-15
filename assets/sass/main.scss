@@ -14,18 +14,17 @@ $breakpoint arguement choices:
 ORDER: Base + typography > general layout + grid > page layout > components
 
 */
-
-@import 'abstracts/mixins';
 @import 'abstracts/variables';
+@import 'abstracts/mixins';
 @import 'base/cssreset';
-
 @import 'base/animation';
-@import 'base/base';
 @import 'base/typography';
+
+@import 'base/base';
 @import 'base/utilities';
 
 @import 'components/button';
-
+@import 'components/breakpoints';
 @import 'layout/home';
 
 @import 'pages/home';

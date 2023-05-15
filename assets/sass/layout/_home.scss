@@ -1,25 +1,3 @@
-html {
-  // This defines what 1rem is
-  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
-
-  // @include respond(phone) {
-  //   font-size: 43.75%; //1rem = 7px, 7/16 = 43.75%
-  // }
-
-  @include respond(tab-port) {
-    // width < 900?
-    font-size: 50%; //1 rem = 8px, 8/16 = 50%
-  }
-
-  @include respond(tab-land) {
-    // width < 1200?
-    font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
-  }
-
-  @include respond(big-desktop) {
-    font-size: 75%; //1rem = 12, 12/16
-  }
-}
 fieldset {
   border: 0;
   font-size: 4rem;
@@ -32,14 +10,14 @@ legend {
 .signup {
   display: flex;
   flex-direction: row;
-  border: 1rem solid rgba(128, 128, 128, 0.5);
+  border: 1rem solid $color-signup-border;
   border-radius: 1rem;
   max-width: $signup-width;
   max-height: $signup-height;
 
   &__picture {
     object-fit: cover;
-    width: 70rem;
+    width: $picture-width;
     height: auto;
     flex: 1.5;
     max-width: 100%;
@@ -57,14 +35,14 @@ legend {
     flex-direction: column;
     &-input {
       background-color: transparent;
-      font-size: 2.5rem;
-      max-width: 40rem;
+      max-width: $input-width;
+      // font-size: 2rem;
       margin-left: 0.1rem;
       border: 0;
       outline: none;
       border-bottom: 0.4rem solid black;
 
-      &:focus {
+      &-active:valid {
         border-bottom: 0.4rem solid green;
       }
       &-active:invalid {
@@ -74,16 +52,5 @@ legend {
         margin-bottom: $input-border-bottom;
       }
     }
-  }
-  &__conditions {
-    font-size: 1.5rem;
-    @include link-decoration;
-  }
-  &__login {
-    font-size: 1.7rem;
-    @include link-decoration;
-  }
-  &__btn {
-    font-size: 2rem;
   }
 }

@@ -4,8 +4,7 @@ const secondPassword = document.querySelector('.second_password');
 const button = document.querySelector('.btn');
 const registrationPage = document.getElementById('home');
 const registredPage = document.getElementById('success');
-
-let checker = (arr) => arr.every(Boolean);
+const checker = (arr) => arr.every(Boolean);
 
 input.forEach((item) =>
   item.addEventListener('focusout', (event) => {

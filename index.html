@@ -9,7 +9,7 @@
   </head>
 
   <body>
-    <div class="signup">
+    <div class="signup" id="home">
       <div class="signup__picture"><img src="assets/img/background.svg" alt="" /></div>
       <div class="signup__container">
         <form class="signup__form" action="#">
@@ -36,7 +36,7 @@
             and
             <a href="" class="signup__conditions-link">Private Policy</a>
           </p>
-          <button type="submit" class="btn btn--white btn--animated" href="#">Create account</button>
+          <button type="submit" class="btn" href="#">Create account</button>
           <p class="signup__login">
             Already have an account?
             <a href="" class="signup__login-link">Login</a>
@@ -44,7 +44,11 @@
         </form>
       </div>
     </div>
-
+    <div class="register" id="success">
+      <div class="register__picture signup__picture"><img src="assets/img/background.svg" alt="" /></div>
+      <div class="register__success"><p>Congratulation, you successfully registred</p></div>
+    </div>
     <script src="./assets/js/script.js"></script>
+    <!--  -->
   </body>
 </html>

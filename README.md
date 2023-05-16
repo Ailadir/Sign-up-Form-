@@ -1,6 +1,6 @@
 # Sign-up-Form
 
-This is a solution to the [Sign-up Form](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form).
+This is a solution to the [Sign-up Form](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form _blank).
 
 ## Table of contents
 

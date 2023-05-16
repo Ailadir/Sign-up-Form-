@@ -1,0 +1,41 @@
+fieldset {
+  border: 0;
+  font-size: 4rem;
+}
+
+legend {
+  margin-left: -0.1rem;
+}
+
+#success {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  border: 1rem solid $color-signup-border;
+  border-radius: 1rem;
+  max-width: $signup-width;
+  max-height: $signup-height;
+  justify-content: center;
+  align-items: center;
+
+  &__picture {
+    object-fit: cover;
+    // min-width: 10rem;
+    max-width: $picture-width; //
+    height: 15rem;
+  }
+}
+
+p {
+  font-size: 3rem;
+  padding: 2rem;
+}

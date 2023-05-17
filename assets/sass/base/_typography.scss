@@ -15,10 +15,12 @@ html {
     font-size: $conditions-font-size;
     @include link-decoration;
   }
+
   &__login {
     font-size: $login-font-size;
     @include link-decoration;
   }
+
   &__btn {
     font-size: $btn-font-size;
   }

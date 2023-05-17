@@ -10,25 +10,40 @@
 
   <body>
     <div class="signup" id="home">
-      <div class="signup__picture"><img src="assets/img/background.svg" alt="" /></div>
+      <div class="signup__picture">
+        <img src="assets/img/background.svg" alt="" />
+      </div>
       <div class="signup__container">
         <form class="signup__form" action="#">
           <fieldset>
             <div class="signup__form-title">Sign up</div>
-            <input type="text" class="signup__form-input" placeholder="Full Name" required />
-            <input type="email" minlength="10" class="signup__form-input" placeholder="Email" required />
+            <input
+              type="text"
+              class="signup__form-input"
+              placeholder="Full Name"
+              required
+            />
+            <input
+              type="email"
+              minlength="10"
+              class="signup__form-input"
+              placeholder="Email"
+              required
+            />
             <input
               type="password"
               minlength="8"
               class="signup__form-input first_password"
               placeholder="Password"
-              required />
+              required
+            />
             <input
               type="password"
               minlength="8"
               class="signup__form-input second_password"
               placeholder="Confirm Password"
-              required />
+              required
+            />
           </fieldset>
           <p class="signup__conditions">
             By signing up, you are agreeing to our
@@ -39,16 +54,19 @@
           <button type="submit" class="btn" href="#">Create account</button>
           <p class="signup__login">
             Already have an account?
-            <a href="" class="signup__login-link">Login</a>
+            <button href="" class="signup__login-link">Login</button>
           </p>
         </form>
       </div>
     </div>
     <div class="register" id="success">
-      <div class="register__picture signup__picture"><img src="assets/img/background.svg" alt="" /></div>
-      <div class="register__success"><p>Congratulation, you successfully registred</p></div>
+      <div class="register__picture signup__picture">
+        <img src="assets/img/background.svg" alt="" />
+      </div>
+      <div class="register__success">
+        <p>Congratulation, you successfully registred</p>
+      </div>
     </div>
     <script src="./assets/js/script.js"></script>
-    <!--  -->
   </body>
 </html>

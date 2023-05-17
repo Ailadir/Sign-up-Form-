@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="" width="300">
+<img src="https://raw.githubusercontent.com/Ailadir/Sign-up-Form-/main/assets/img/sign-up-screenshot.png" width="300">
 
 ### Links
 

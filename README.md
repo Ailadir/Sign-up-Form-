@@ -1,6 +1,6 @@
 # Sign-up-Form
 
-This is a solution to the [Sign-up Form](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard).
+This is a solution to the [Sign-up Form](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form).
 
 ## Table of contents
 
@@ -22,27 +22,33 @@ This is a solution to the [Sign-up Form](https://www.theodinproject.com/lessons/
 
 Users should be able to:
 
+- Using all input fields
+- Getting visual feedback if his input right/wrong
+- Getting hints when trying to sumbit wrong information into input fields
 - Comfortable use this web-page on all devices
 
 ### Screenshot
 
-<img src=" width="500">
+<img src="" width="300">
 
 ### Links
 
-- Live Site URL: [Sign-in form]()
+- Live Site URL: [Sign-in form](https://ailadir.github.io/Sign-up-Form-/)
 
 ### Built with
 
 - Semantic HTML5 markup
 - SCSS
-- Grid
-- Flex
+- Flexbox
 - Native JavaScript
 - Responsive design in mind
 
 ### What I learned
 
+- BEM - Idea, how to use it and profits of using it with SCSS(nesting)
+- Architecture and implementation of SCSS in project.
+- How to configurate form for your need
+- Improved knowledge of flex
 
 ### Useful resources
 
